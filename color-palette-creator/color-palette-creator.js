@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'https://cdn.skypack.dev/lit'
-import { colors as defaultColors } from '../default-colors'
+import { colors as defaultColors } from '../default-colors.js'
 
 class ColorPaletteCreator extends LitElement {
 	static get properties() {
