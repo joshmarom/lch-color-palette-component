@@ -1,5 +1,5 @@
 import { html } from 'https://cdn.skypack.dev/lit'
-import { LCH_to_RGB } from './lch2rgb'
+import { LCH_to_RGB } from './lch2rgb.js'
 
 const convertColors = (colors) =>{
     const rgbColors = {}
