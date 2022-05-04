@@ -1,4 +1,4 @@
-import { LitElement, css, html } from 'lit'
+import { LitElement, css, html } from 'https://cdn.skypack.dev/lit'
 
 export class ColorStrip extends LitElement {
     static get properties() {
