@@ -18,16 +18,9 @@ const convertColors = (colors) =>{
     return rgbColors
 }
 
-const renderColorTokens = (rgbColors) =>{
-    let style = []
-
-    style.push(`:host {`)
-    Object.entries(rgbColors).forEach(([colorName, color]) => 
-        style.push(`--${colorName}: ${color};`)
-    )
-    style.push(`}`)
-    
-    return style.join(' ')
+const renderColorTokens = (rgbColors) => {
+    const tokens = Object.entries(rgbColors).map(([colorName, color]) => (`--${colorName}: ${color};`))
+    return `:host() {${ tokens.join(' ') }}`
 }
 
 export const generateColorTokens = (colors) => {
